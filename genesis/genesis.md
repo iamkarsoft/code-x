@@ -81,6 +81,45 @@ include_once(get_stylesheet_directory().'/includes/widget-areas.php');
 //you must create an include folder in your child theme folder
 ```
 
+- Checking for active widgets with a function in the fron-page template
+```
+//hoocking function into file
+
+add_action('genesis_meta','embriyon_home_page_setup');
+
+
+function embriyon_home_page_setup(){
+	$home_sidebars=array(
+ 'home_welcome'=> is_active_sidebar('home_welcome'),
+ 	);
+
+	//return if no sidebars are active
+ 	if(!in_array(true,$home_sidebars)){
+ 	return;
+ 	}
+
+ 	//add home welcome are if "Home welcome" is active 
+ 	if($home_sidebar['home_welcome']){
+
+ 	}
+}
+```
+
+
+- Displaying content for home welcome section
+```
+function embriyon_add_home_welcome(){
+	
+	genesis_widget_area('home-welcome'
+
+	array(
+	'before'=>'<div class="home-welcome"><div class="wrap">',
+	'after'=>'</div></div>'
+	)
+	);
+}
+```
+
 
 
 
