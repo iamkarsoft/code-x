@@ -40,7 +40,7 @@
 
 		//Description for adding site functionality```
 
-```/**
+``` /**
 *Theme setup
 *attach all of site-wide functions
 *
@@ -55,22 +55,22 @@
 
  - Call genesis function
 
-```genesis(); //Call it in all the pages
+``` genesis(); //Call it in all the pages
 //Defining some constant in the child theme to referene later
 	//define them constant in function
 define('CHILD_THEME_NAME','embriyon');
 define('CHILD_THEME_URL','http://embriyon.com');
-define('	CHILD_THEME_VERSION','1.0.0');```
+define('	CHILD_THEME_VERSION','1.0.0');
 
-```//Add themes support from genesis folder(html5, genesis-responsive-viewport,genesis-accessibility)
+//Add themes support from genesis folder(html5, genesis-responsive-viewport,genesis-accessibility)
 //Add theme support for footer widgets
 add_theme_support('genesis-footer-widgets',3);
 
 //Removing Layout
 genesis_unregister_layout('content-sidebar-sidebar'); //i.e
-unregister_sidebar('');```
+unregister_sidebar('');
 
-```//Creating widget areas in function or in another file
+//Creating widget areas in function or in another file
 genesis_register_sidebar(array(
    'id'=>'home-welcome',
 'name'=>__('home welcome'),
