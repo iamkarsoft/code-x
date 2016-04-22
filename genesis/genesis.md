@@ -1,18 +1,18 @@
 ### Creating the theme folder
 - Create a folder
--- Create a style.css
---- Style theme header
---- Theme name
---- Theme URi
---- Author name and URI
---- Template: genesis
---- Version
---- License and License URI
---- Tags
---- Text Domain: Embriyon
+	-- Create a style.css
+		--- Style theme header
+		--- Theme name
+		--- Theme URi
+		--- Author name and URI
+		--- Template: genesis
+		--- Version
+		--- License and License URI
+		--- Tags
+		--- Text Domain: Embriyon
 
 - Functions.php
---Theme customization doc block
+	--Theme customization doc block
 ``` /***@package theme-name
 		*@author Karsof
 		*@link http://kofi.work
@@ -22,7 +22,7 @@
 
 - Initializing Genesis framework
 
-```//Loading text domain function
+``` //Loading text domain function
 		load_child_theme_textdomain('embriyon');
 		//Hook into genesis
 		add_action('genesis_setup','embriyon_setup', 15)
@@ -44,7 +44,7 @@
 #### Front-page.php
  - Doc-block
  - Call genesis function
-	```genesis(); //Call it in all the pages
+	``` genesis(); //Call it in all the pages
 	//Defining some constant in the child theme to referene later
 		//define them constant in function
 	define('CHILD_THEME_NAME','embriyon');
