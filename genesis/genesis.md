@@ -45,7 +45,7 @@
 *attach all of site-wide functions
 *
 *@since 1.0.0
-*/ put this above setup function
+*/ put this above setup function```
 
 ### Page
 
@@ -55,7 +55,7 @@
 
  - Call genesis function
 
-genesis(); //Call it in all the pages
+```genesis(); //Call it in all the pages
 //Defining some constant in the child theme to referene later
 	//define them constant in function
 define('CHILD_THEME_NAME','embriyon');
