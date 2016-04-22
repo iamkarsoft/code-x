@@ -23,11 +23,11 @@
 		*@link http://kofi.work
 		*@copyright
 		*@GPL-2.0
-**/
+**/```
 
 - Initializing Genesis framework
 
-//Loading text domain function
+```//Loading text domain function
 		load_child_theme_textdomain('embriyon');
 		//Hook into genesis
 		add_action('genesis_setup','embriyon_setup', 15)
@@ -40,7 +40,7 @@
 
 		//Description for adding site functionality
 
-``` /**
+/**
 *Theme setup
 *attach all of site-wide functions
 *
