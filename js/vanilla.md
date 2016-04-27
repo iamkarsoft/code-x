@@ -149,3 +149,45 @@ for(i =5; i<=50; i++ ){
 	}
 }
 ```
+
+### Functions
+
+ - syntax
+ ```
+ function doSomething(){
+console.log("hello world");
+}
+
+// calling the function
+doSomething();
+
+ ```
+
+ - 2 types of functions
+  -- Function Declarations
+   ```
+   function doSomething(){
+console.log("hello world");
+}
+```
+
+-- function expressions
+
+```
+var dosomething=function doSomething(){
+console.log("hello world");
+}
+```
+
+- example
+```
+function square(num){
+console.log(num * num);
+}
+ square(10); //prints 100
+
+```
+
+
+
+
