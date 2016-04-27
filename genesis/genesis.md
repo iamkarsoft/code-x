@@ -61,12 +61,19 @@ genesis(); //Call it in all the pages
 define('CHILD_THEME_NAME','embriyon');
 define('CHILD_THEME_URL','http://embriyon.com');
 define('CHILD_THEME_VERSION','1.0.0');
+
+
 //Add themes support from genesis folder(html5, genesis-responsive-viewport,genesis-accessibility)
+
+
 //Add theme support for footer widgets
 add_theme_support('genesis-footer-widgets',3);
 //Removing Layout
+
 genesis_unregister_layout('content-sidebar-sidebar'); //i.e
 unregister_sidebar('');
+
+
 //Creating widget areas in function or in another file
 genesis_register_sidebar(array(
    'id'=>'home-welcome',
