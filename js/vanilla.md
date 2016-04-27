@@ -318,13 +318,19 @@ var friends= ["nana", "king", "noiro"];
 Using for loop array.
 
 ```
-var friends = ["nana", "king", "noiro"];
+var friends= ["nana", "king", "noiro"];
 
-for(var i=0; i<friends.length ;i++){
+
+for(var i=0;i < friends.length;i++){
       console.log(friends[i]);
-};
+}
 
-// Foreach with array
+
+```
+
+- Foreach with array
+
+```
 
 var friends = ["nana", "king", "noiro"];
 
@@ -391,4 +397,309 @@ function deleteTodo(){
 
 ```
 
+### Objects
+Unlike arrays that index it’s content, method sort of allows a free flow of data.
 
+i.e Array
+
+```
+var person= ["kofi",13,"accra"];
+
+//compared to object
+var person={
+  name:"kofi",
+  age:13,
+  city:"accra"
+}
+```
+Example of creating an object and calling that object
+```
+Creating the object dog
+
+var dog={
+  name:"Bubba",
+  bread:"Lab",
+  age:3
+}
+```
+- calling the object
+```
+//calling the object
+dog["name"]; //prints Bubba which is the dog's name
+
+
+//or we could do it the second and easy way
+dog.name; //prints Bubba which is the dog's name
+```
+
+- Updating the object content
+
+if we wanted to update the dog’s age we can do it in 2 different ways
+
+```
+//updating the dog
+dog["age"]=6 ; //updates the dogs age from 3 to 6
+
+//and the second way
+dog.age=6; // also prints 
+```
+ - Example of object challenge
+
+This is an exercise focused on arrays and objects, where we have arrays withing arrays and object within an array. This is possible because we nest arrays within array, objects within an object.
+
+```
+//example on movie database
+var movies= [
+{
+	title:"In Bruges",
+	rating:5,
+	hasWatched:"watched"
+},
+{
+	title:"Frozen",
+	rating:4.5,
+	hasWatched:"not seen"
+},
+{
+	title:"Mad Max Fury Roads",
+	rating:5,
+	hasWatched:"seen"
+},
+
+{
+	title:"Les Miserables",
+	rating:3.5,
+	hasWatched:" not seen"
+}
+
+
+	]    ;
+
+
+	
+		movies.forEach(function(movies){
+		console.log("You have "+movies.hasWatched +" " + movies.title +" - " + movies.rating +" stars");
+	});
+```
+
+### Methods
+Methods are functions within objects
+
+- calling a method in an object
+
+```
+person.total();
+//examples
+//methods into objecs
+var person={ 
+name: "Ramos",
+math:5,
+english:10,
+total: function(x,y){
+return x+y;
+
+}
+}
+
+//calling the method 
+person.total(person.math,person.english)
+```
+### DOM 
+Every website has a DOM, I refer to it as the structure. We can use javascript to do tons of things thanks to the DOM. We can manipulate tags and do various stuff with it
+
+- Select and Manipulate
+
+Selecting and manipulating tags with js
+```
+var h1 = document.querySelector("h1");
+h1.style.color="pink";
+DOM selectors
+
+document.getElementByID() // selects elemnt with an id
+document.getElementByClassName()// selects element with class name
+document.getElementByTagName() // selects tags
+document.querySelector() // similar to css type of selection p.s: only returns the first result
+document.querySelectorAll() // similar to the previous but returns all the matching one
+var h1 = document.getElementByID("first");
+h1= document.getElementByClass(".special");
+
+document.querySelector(".special");
+document.querySelectorAll("#first");
+document.querySelector("h1 + p");
+```
+- Manipulating style with javascript
+
+Using js to style a page
+	```	
+//we could add styles and remove styles existing in a stylesheet
+tag.classList.add("navbar");
+//removing style
+tag.classList.remove("navbar");
+
+//or we could just toggle
+tag.classList.togglle("navbar");
+```
+- Manipulating Attributes
+
+we can manipulate any attribute in the dom using getAttribute() and setAttribute()
+
+we are going to manipulate the source of links on a page.
+```	
+Facebook
+var link= document.querySelector("a"); // selects the first link
+link.getAttribute("href"); // this gets the link address
+
+link.setAtttribute("href","http://google.com");
+```
+
+
+### DOM events
+Dom events are used to make cool stuff such as trigger things on click
+
+Syntax
+
+to do this we will have to choose an element and add the event listener to it
+```
+element.addEventListener("type",functiontocall(){})
+```
+
+-- I.e 1
+```
+//js script
+var button = document.querySelector("button");
+var isBlue=false;
+
+button.addEventListener("click", function(){
+if(isBlue){
+	document.body.style.background="blue";
+	document.body.style.color="white";
+	isBlue=false;
+}else{
+	document.body.style.background="white";
+	document.body.style.color="blue";
+	isBlue=true;
+
+	}
+});
+```
+
+-- I.e 2
+
+```
+//javascript 
+
+
+var p1= document.querySelector("#p1");
+
+var p2= document.getElementById("p2");
+
+var reset=document.getElementById("reset");
+
+var p1display=document.querySelector("#p1score");
+
+var p2display=document.querySelector("#p2score");
+
+var resetButton= document.querySelector("#reset");
+
+var input= document.querySelector("input");
+
+var p=document.querySelector("p");
+
+var winningSpan=document.querySelector("p span");
+
+var p1score= 0;
+
+var p2score= 0;
+
+var gameover=false;
+
+var winning=5;
+
+
+p1.addEventListener("click", function(){
+
+ if(!gameover){
+
+	p1score++;
+
+	if(p1score===winning){
+
+	console.log("Player 1 won");
+
+p1display.classList.add("green");
+
+	gameover=true;}
+
+	p1display.textContent = p1score;}
+
+});
+
+
+p2.addEventListener("click", function(){
+
+ if(!gameover){
+
+	p2score++;
+
+	if(p2score===winning){
+
+	console.log("Player 2 won");
+
+p2display.classList.add("green");
+
+gameover=true;
+
+}
+
+	p2display.textContent = p2score;}
+
+});
+
+
+resetButton.addEventListener("click",function(){
+
+		p1score=0;
+
+	p2score=0;
+
+
+	p1display.textContent=0;
+
+	p2display.textContent=0;
+
+
+	p1display.classList.remove("green");
+
+	p2display.classList.remove("green");
+
+	gameover=false;
+
+
+});
+
+
+input.addEventListener("change",function(){
+
+ winningSpan.textContent= this.value;
+
+ winning=Number(this.value);
+
+	p1score=0;
+
+	p2score=0;
+
+
+	p1display.textContent=0;
+
+	p2display.textContent=0;
+
+
+	p1display.classList.remove("green");
+
+	p2display.classList.remove("green");
+
+	gameover=false;
+
+})
+
+```
