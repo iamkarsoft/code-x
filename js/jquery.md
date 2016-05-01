@@ -131,3 +131,24 @@ i.e example using fadeOut
 
 fadeOut(1000,function(){})
 ```
+
+### Focus
+focusing on specific element 
+
+i.e example of showing error message 
+```
+$("#password").focus(function(){
+	if($(this).val().length > 8){
+    	$(this).next().hide();
+	}else{
+		$(this).next().show();
+	}
+}).keyup(
+function(){
+	if($(this).val().length > 8){
+    	$(this).next().hide();
+	}else{
+		$(this).next().show();
+	}
+}
+)
