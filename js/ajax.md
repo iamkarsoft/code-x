@@ -244,7 +244,7 @@ xhr.open("GET",'checkin.js');
  </script>
  ```
 
- - checkin.js  for json data 
+ - checkin.json  for json data 
 
  ```
  <script>
@@ -274,3 +274,132 @@ xhr.open("GET",'checkin.js');
  </script>
  ```
 
+
+ ### Usin ajax and jquery
+
+simple way of using ajax with jquery simplifying the 4 steps into 1
+
+  - Using the load() jquery function 
+
+
+```
+function callAjax(){
+$("ajax").load('sidebar.html');
+}
+```
+
+ - Same exercise using jquery which was previously done with vanilla js 
+
+ This uses the JQuery.get() for retrieving information
+
+ the syntax
+
+ ```
+ jquery.get(url,data,callback_function);
+
+ ```
+
+ -- example 
+
+ ```
+ $(document).ready(function() {
+
+	//url link
+
+	var url="checkin.json";
+
+	//callback function
+
+	$$.getJSON('url', function(response){
+
+		var statusHTML ="<ul class='bulleted'>"
+		//jquery for each 
+		$.each(response, function(index,checkin){
+
+			if(checkin.inoffice===true){
+				statusHTML+='<li class="in">';
+
+			}else {
+				statusHTML+='<li class="out">';
+			}
+			statusHTML+= checkin.name+'</li>';
+		});
+ statusHTML += '</ul>';
+
+ 	//adding html to the page
+ 	$('.sidebar').html(statusHTML);
+
+	} );
+	
+});
+```
+
+- Post() to send data to server 
+```
+ jquery.post(url,data,callback_function);
+ ```
+
+ - making a form submit via ajax 
+
+ ```
+$(document).ready(function(){
+	//adding event handler 
+
+	$('.form').submit(function(evt){
+	//prevent leaving the page
+	evt.preventDefault();
+
+		//url 
+	var url=$(this).attr("action");
+
+	//data to push 
+	var formData= $(this).serialize();
+ 
+ //ajax 
+	$.post(url, formData, function(response){
+		$('#signup').html("<p>Thank You for submiting</p>")
+	});
+	});
+})
+
+ ```
+
+ - $.ajax() is the ultiame jquery ajax function 
+
+ ```
+ $.ajax(url, settings);
+```
+
+-- i.e 
+```
+$(document).ready(function(){
+	//adding event handler 
+
+	$('.form').submit(function(evt){
+	//prevent leaving the page
+	evt.preventDefault();
+
+		//url 
+	var url=$(this).attr("action");
+
+	//data to push 
+	var formData= $(this).serialize();
+ 
+ //ajax 
+	$.ajax(url,{
+			//data to send 
+			data : formData,
+			//type of request 
+			type : "POST",
+
+			//response if successful
+			success : function(response){
+					$('#signup').html("<p>Thank You for submiting</p>")
+			}
+	});
+	});
+})
+
+```
+
+### Handling Errors in ajax  
