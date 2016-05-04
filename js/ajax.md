@@ -403,3 +403,11 @@ $(document).ready(function(){
 ```
 
 ### Handling Errors in ajax  
+
+- using fail() and jqXHR to get ajax error 
+
+```
+$.get().fail( function (jqXHR){
+	alert(jqXHR.status);
+});
+```
