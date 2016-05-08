@@ -1,4 +1,25 @@
+### Creating Directory
 
+```
+mkdir edibles
+```
+
+### Creating a file 
+
+``` 
+touch hello.txt 
+```
+
+
+
+### Changing Directory
+```
+cd drinks/
+
+//going backwards with .notation
+
+cd ../action
+```																																																																												
 ### Copying
 - To copy a file into a directory
 
