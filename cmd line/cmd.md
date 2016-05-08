@@ -4,12 +4,16 @@
 mkdir edibles
 ```
 
-### Creating a file 
+### Creating a file in bash
 
 ``` 
 touch hello.txt 
 ```
+### Deleting a file in bash 
 
+```
+rm hello.txt
+```
 
 
 ### Changing Directory
