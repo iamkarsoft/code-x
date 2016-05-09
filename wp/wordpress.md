@@ -34,3 +34,34 @@ jQuery(document).ready(function($){
 	$(".navbar-toggle").hide();
 })
 ```
+
+### TItle for page 
+
+```
+<?php wp_title(); ?>
+```
+
+### blog_info()
+
+-Url 
+
+```
+<? php blog_info('url'); ?>
+```
+
+- Title 
+```
+<? php blog_info('name'); ?>
+```
+
+### The Loop 
+
+```
+<?php if(have_posts() ) : while (have_posts() ) :  the_post(); ?>
+
+
+<?php  endwhile; else:?>
+
+<?php endif; ?>
+
+```
