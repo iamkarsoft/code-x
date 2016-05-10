@@ -101,3 +101,39 @@ jQuery(document).ready(function($){
  <?php wp_nav_menu( array(
 	'theme_location'=>'Primary Menu', 'menu_id'=>'primary-menu', menu_class=> 'nav-menu'
  )) 
+
+ ### Wordpress theme support function 
+
+ ```
+ function theme_support(){
+		add_theme_support('title-tag');
+		add_theme_support('automatic-feed-links');
+		add_theme_support('menus');
+    add_theme_support('post-thumbnails');
+  add_image_size('featured-image',500,315,false);
+
+} add_action('after_setup_theme','theme_support');
+
+```
+
+### wordpress widget creation
+
+```
+function theme_widgets_init(){
+
+      register_sidebar( array(
+          'name' => __( 'Seul Widget', 'Seul' ),
+          'id' => 'widget-1',
+    'before_widget'=>'<div class="main-widgets">',
+        'after_widget'=>'</div>',
+
+        'before_title'=>'<h1 class="widget-title">',
+        'after_title'=>'</h1>'
+      ) );
+
+
+      }
+
+  add_action( 'widgets_init', 'theme_widgets_init' );
+
+  ```
