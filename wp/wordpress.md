@@ -78,3 +78,26 @@ jQuery(document).ready(function($){
 ``` 
 <?php the_content(); ?>
 ```
+### adding header image to template
+ ```
+ <?php if(get_header_image() ) :?>
+ 	<a href="<?php ech esc_url(home_url('/')) ;?>" rel ="Home">
+		<img src="<?php header_image(); ?>" width="<?ph echo esc_attr(get_header_image()) ?>" />	
+ 	</a>
+ <?php endif; ?>
+ ```
+
+ ### registering menus
+ ```
+ register_nav_menus(
+	'primary'=>esc_html__('Primary Menu','embriyon'),
+	// adding additional menus
+	'secondary'=> esc_html__('Secondary Menu', 'embriyon')
+ )
+ ```
+
+ ### placing menu into theme
+ ```
+ <?php wp_nav_menu( array(
+	'theme_location'=>'Primary Menu', 'menu_id'=>'primary-menu', menu_class=> 'nav-menu'
+ )) 
