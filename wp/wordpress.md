@@ -59,9 +59,22 @@ jQuery(document).ready(function($){
 ```
 <?php  if(have_posts() ) : while (have_posts() ) :  the_post(); ?>
 
-
+		  //the content
 <?php  endwhile; else:?>
-
+        //throw error message
 <?php endif; ?>
 
+```
+
+### wordpress content tags 
+
+- Title 
+```
+<?php the_title() ; ?>
+```
+
+- The content 
+
+``` 
+<?php the_content(); ?>
 ```
