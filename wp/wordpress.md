@@ -137,3 +137,18 @@ function theme_widgets_init(){
   add_action( 'widgets_init', 'theme_widgets_init' );
 
   ```
+
+  ### wp excerpt 
+
+  ```
+  function new_excerpt_length($length){
+  return 60;
+}
+add_filter( 'excerpt_length', 'new_excerpt_length',999);
+
+    function new_excerpt_more( $more ) {
+  return '<br><br> <a class="read-more" href="'. get_permalink( get_the_ID() ) . '">' . __(' <span class="fa fa-arrow-circle-right"></span> Read More', 'your-text-domain') . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+```
