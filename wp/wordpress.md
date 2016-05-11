@@ -173,7 +173,13 @@ add_theme_support('menus');
 
 - now calling the navigation in the location we want 
 ```
-<?php wp_nav_menu($args); ?>
+<?php
+$args = array(
+'container'=> false, // container
+'theme_location'=>'primary-menu', // location
+'menu-class'=>'no-bullet' // class givent to ul);
+ 
+ wp_nav_menu($args); ?>
 
 ```
 
