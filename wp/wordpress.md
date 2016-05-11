@@ -152,3 +152,41 @@ add_filter( 'excerpt_length', 'new_excerpt_length',999);
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 ```
+
+### Creating custom page template
+
+```
+<?php 
+/*
+Template Name: Left Sidebar 
+
+*/
+```
+### Wordpress navigation 
+
+wp_nav_menu()
+
+- Add theme support for menus in function.php
+```
+add_theme_support('menus');
+``
+
+- now calling the navigation in the location we want 
+```
+<?php wp_nav_menu($args); ?>
+
+```
+
+- lets create the menu function in the functions file 
+
+```
+function register_theme_menus(){
+  register_nav_menus(
+  array(
+     'primary-menu' =>__('Primary Menu'),
+     'social-networks' =>__('social Links')
+  )
+
+  );
+}add_action('init','register_theme_menus');
+```
