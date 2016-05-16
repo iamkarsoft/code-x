@@ -297,7 +297,8 @@ similar to home
 $num_posts = (is_front_page() ) ? 4 : -1;
 
 $args= array(
-     'post_type' => 'portfolio'
+     'post_type' => 'portfolio',
+     'post_per_page'=> $num_posts
 );
 
 $query = new wp_query( $args );
