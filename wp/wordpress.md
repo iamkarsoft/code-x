@@ -7,6 +7,7 @@
 - single.php 
 - header.php 
 - footer.php 
+- archive.php
 
 ### Linking and enqueueing stylesheets and javascript files 
 
@@ -136,11 +137,11 @@ function theme_widgets_init(){
 
   add_action( 'widgets_init', 'theme_widgets_init' );
 
-  ```
+```
 
   ### wp excerpt 
 
-  ```
+ ```
   function new_excerpt_length($length){
   return 60;
 }
@@ -152,6 +153,68 @@ add_filter( 'excerpt_length', 'new_excerpt_length',999);
 add_filter( 'excerpt_more', 'new_excerpt_more' );
 
 ```
+
+### calling the excerpt
+
+```
+<?php the_excerpt() ?>
+```
+
+```
+<?php echo strip_tags(get_the_excerpt()); ?>
+```
+### the avatar
+
+```
+<?php echo get_avatar(get_the_author_meta('ID'), 24 //24 is the size) ?>
+```
+
+or 
+
+```
+<?php the_avatar() ?>
+
+```
+### the author 
+
+```
+<?php the_author() ?>
+```
+or getting author link 
+
+```
+<?php the_author_posts_link(); ?>
+```
+
+### The category 
+
+```
+<?php the_category();?>
+```
+
+```
+<?php the_category(' , ');?>
+```
+
+### the date
+
+```
+<?php the_date(); ?>
+```
+
+
+```
+<?php the_time('F j, Y'); ?>
+```
+
+### Featured image with post thumbnail 
+
+```
+<?php the_post_thumbnail('large'); //small,medium,large ?>
+```
+
+
+
 
 ### Creating custom page template
 
@@ -172,6 +235,7 @@ add_theme_support('menus');
 ``
 
 - now calling the navigation in the location we want 
+
 ```
 <?php
 $args = array(
@@ -195,4 +259,56 @@ function register_theme_menus(){
 
   );
 }add_action('init','register_theme_menus');
+```
+
+### simple wordpress pagination with next and previous
+
+```
+ <ul>
+          <li> <?php previous_posts_link('<span class="fa fa-arrow-circle-left"> </span>'); ?> </li>
+
+          <li> <?php next_posts_link('<span class="fa fa-arrow-circle-right"> </span>'); ?> </li>
+  </ul>
+```
+
+### comments
+
+example
+
+```
+<?php comments_template( $file, $separate_comments); ?>
+
+//or 
+
+<?php comments_template(); ?>
+
+```
+
+- custom comment -> comments.php 
+
+### Archives archive.php 
+
+similar to home 
+
+### Wp_query
+
+```
+
+$num_posts = (is_front_page() ) ? 4 : -1;
+
+$args= array(
+     'post_type' => 'portfolio'
+);
+
+$query = new wp_query( $args );
+?>
+
+
+<?php if ($query -> have_posts()) : while( $query->have_posts()) : $query -> the_post(); ?>
+
+  //
+
+
+<?php endwhile; endif; wp_reset_postdata(); ?>
+
 ```
