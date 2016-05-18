@@ -80,6 +80,7 @@ jQuery(document).ready(function($){
 <?php the_content(); ?>
 ```
 ### adding header image to template
+
  ```
  <?php if(get_header_image() ) :?>
  	<a href="<?php ech esc_url(home_url('/')) ;?>" rel ="Home">
@@ -89,6 +90,7 @@ jQuery(document).ready(function($){
  ```
 
  ### registering menus
+
  ```
  register_nav_menus(
 	'primary'=>esc_html__('Primary Menu','embriyon'),
@@ -98,6 +100,7 @@ jQuery(document).ready(function($){
  ```
 
  ### placing menu into theme
+
  ```
  <?php wp_nav_menu( array(
 	'theme_location'=>'Primary Menu', 'menu_id'=>'primary-menu', menu_class=> 'nav-menu'
@@ -311,5 +314,15 @@ $query = new wp_query( $args );
 
 
 <?php endwhile; endif; wp_reset_postdata(); ?>
+
+```
+
+
+### Custom post type with andvanced custom fields and custom post time UI
+
+After installing those 2 plugins, to retrieve the data in the fields.
+
+```
+<?php the_field('description') ?>
 
 ```
