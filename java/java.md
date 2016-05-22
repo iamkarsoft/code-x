@@ -13,6 +13,7 @@
 
 ```
 
+##### example in bluej
 ```
 public class HelloPrinter
 {
@@ -22,5 +23,30 @@ public class HelloPrinter
     }
     
 }
+```
+#### explaining the whole line
+- System.out is an object 
+- .println is the method
+
+
+#### Difference between print & println
+
+- print prints result but without goint to the next line
+- println on the other hand prints result on a new line everytime it runs 
+
+```
+//print 
+System.out.print(1)
+
+//println
+System.out.println(1)
+```
+
+#### Errors
+
+- compile-time error or system error 
+- run-time error or logic error 
+
+
 ```
 
