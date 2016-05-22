@@ -347,7 +347,7 @@ $wp_customize -> get_setting();
 
 ### Controler 
 
-the controler shows the result of the setting
+the controler shows the result of the setting. it's the actual html element 
 
 - text controler 
 - color controler 
@@ -385,3 +385,20 @@ $wp_customize -> add_setting( class, array(
 ))
 
 ``` 
+
+### Customizer function 
+
+``` function koofi_theme_customizer($wp_customize){
+
+//customizing title and tagline section and lagels
+
+$wp_customize->get_section('title_tagline')->title = __('Site Name and Description', 'koofi');
+$wp_customize->get_control('blogname')->label=__('Site Name','koofi');
+$wp_customize->get_control('blogdescription')->label=__('Site Description','koofi');
+$wp_customize->get_setting('blogname')->transport='postMessage';
+$wp_customize->get_control('blogdescription')->transport ='postMessage';
+
+    
+}add_action('customize_register','koofi_theme_customizer');
+
+```
