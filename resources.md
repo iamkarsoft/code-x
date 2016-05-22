@@ -29,12 +29,12 @@ Bunch of resources I use for projects and developing my skills
 -[genesis wordrpess framework](https://github.com/matthieua/WOW) 
 -[x-theme](https://github.com/matthieua/WOW) 
 -[underscore wordpress starter template](https://github.com/matthieua/WOW) 
-- [Normalize](https://necolas.github.io/normalize.css)
+- [Normalize css](https://necolas.github.io/normalize.css)
 
  installation `npm install --save normalize.css`
 
  bower installation `bower install --save normalize-css`
-
+- [Animate css](https://daneden.github.io/animate.css/)
 
 
 
