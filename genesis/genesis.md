@@ -3,7 +3,6 @@
 - Create a folder
 
 	-- Create a style.css
-
 		--- Style theme header
 		--- Theme name
 		--- Theme URi
@@ -83,12 +82,14 @@ genesis_register_sidebar(array(
 
 
 - adding theme widget through include
+
 ``` 
 include_once(get_stylesheet_directory().'/includes/widget-areas.php'); 
 //you must create an include folder in your child theme folder
 ```
 
 - Checking for active widgets with a function in the fron-page template
+
 ```
 //hoocking function into file
 
@@ -114,6 +115,7 @@ function embriyon_home_page_setup(){
 
 
 - Displaying content for home welcome section
+
 ```
 function embriyon_add_home_welcome(){
 	
@@ -126,9 +128,6 @@ function embriyon_add_home_welcome(){
 	);
 }
 ```
-
-
-
 
 
 			

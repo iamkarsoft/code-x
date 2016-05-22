@@ -326,3 +326,62 @@ After installing those 2 plugins, to retrieve the data in the fields.
 <?php the_field('description') ?>
 
 ```
+
+## WP Customizer API
+
+
+### Settings
+
+wordpress settings are save in the customizer using the following code 
+
+```
+//adding settings 
+$wp_customize -> add_setting();
+
+
+//geting settings 
+
+$wp_customize -> get_setting();
+
+```
+
+### Controler 
+
+the controler shows the result of the setting
+
+- text controler 
+- color controler 
+- image controler 
+- upload controler 
+
+
+```
+// adding controler 
+$wp_customize -> add_control(  class );
+
+```
+
+### Sections and Panels
+
+Sections are the different areas of the theme customizer  and a panel is a group of sections
+
+```
+//adding section 
+$wp_customize -> add_section();
+```
+
+### Transport 
+
+Parameter for setting and determine how message should be displayed
+
+- Refresh (need page refresh)
+- Post (updates live)
+
+
+```
+$wp_customize -> add_setting( class, array(
+        'transport'-> 'Refresh'
+    
+))
+
+``` 
