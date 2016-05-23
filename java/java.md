@@ -49,4 +49,65 @@ System.out.println(1)
 
 
 ```
+### Datatypes
+- boolean true or false
+- int 23
+- char 'A'
 
+
+### Booleans True or False
+
+```
+public class DataTypesB {
+	public static void main(String[] args) {
+
+		System.out.println(true);
+
+	}
+}
+```
+
+
+### Variables
+
+
+ In java all variables must start with a specified data type
+
+ ```
+public class Variables {
+	public static void main(String[] args) {
+
+		int myNumber=42;
+		boolean isFun=true; 
+		char movieRating='A'; 
+
+	}
+}
+```
+
+### Arythmetics in java 
+
+```
+int sum = 34 + 113;
+int difference = 91 - 205;
+int product = 2 * 8; 
+int quotient = 45 / 3;
+```
+
+### RElational operators
+
+1- < : less than.
+2- <=: less than or equal to.
+3- >: greater than.
+4- >=: greater than or equal to.
+
+
+```
+public class RelationalOperators {
+	public static void main(String[] args) {
+
+		System.out.println(6>3);
+
+	}
+}
+```
