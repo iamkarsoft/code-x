@@ -111,3 +111,24 @@ public class RelationalOperators {
 	}
 }
 ```
+
+### Equality operators
+
+1- == : equal to 
+2- != : not equal to 
+
+```
+public class Generalizations {
+	public static void main(String[] args) {
+
+//first comment
+		boolean isComplete=true;
+		int awesomeLevel=121;
+    int epicLevel=awesomeLevel;	
+		System.out.println(epicLevel);
+		
+
+	}
+}
+
+```

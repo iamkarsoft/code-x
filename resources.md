@@ -15,10 +15,10 @@ Bunch of resources I use for projects and developing my skills
 
 ### Wordpress 
 
-- [advanced custom fields]()
+- [advanced custom fields](https://www.advancedcustomfields.com/)
 - [mail chimp]()
-- [custom fields ui]()
-- [jetpack]()
+- [custom post ui](https://wordpress.org/plugins/custom-post-type-ui/)
+- [jetpack](https://wordpress.org/plugins/jetpack/)
 - []
 
 
