@@ -1,19 +1,22 @@
 ### Data Types
 
- #### Strings
+#### Strings
  printing out Ramos
 
 ```
 	System.out.println("Ramos");
+
 ```
 
- #### Numbers
+#### Numbers
+
 ```
 		System.out.println(1);
 
 ```
 
 ##### example in bluej
+
 ```
 public class HelloPrinter
 {
@@ -23,8 +26,10 @@ public class HelloPrinter
     }
     
 }
+
 ```
 #### explaining the whole line
+
 - System.out is an object 
 - .println is the method
 
@@ -40,6 +45,7 @@ System.out.print(1)
 
 //println
 System.out.println(1)
+
 ```
 
 #### Errors
@@ -48,7 +54,6 @@ System.out.println(1)
 - run-time error or logic error 
 
 
-```
 ### Datatypes
 - boolean true or false
 - int 23
@@ -65,6 +70,7 @@ public class DataTypesB {
 
 	}
 }
+
 ```
 
 
@@ -83,6 +89,7 @@ public class Variables {
 
 	}
 }
+
 ```
 
 ### Arythmetics in java 
@@ -92,6 +99,7 @@ int sum = 34 + 113;
 int difference = 91 - 205;
 int product = 2 * 8; 
 int quotient = 45 / 3;
+
 ```
 
 ### RElational operators
@@ -110,6 +118,7 @@ public class RelationalOperators {
 
 	}
 }
+
 ```
 
 ### Equality operators
