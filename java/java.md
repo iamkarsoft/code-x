@@ -104,10 +104,10 @@ int quotient = 45 / 3;
 
 ### RElational operators
 
-1- < : less than.
-2- <=: less than or equal to.
-3- >: greater than.
-4- >=: greater than or equal to.
+- < : less than.
+- <=: less than or equal to.
+- >: greater than.
+- >=: greater than or equal to.
 
 
 ```
@@ -122,9 +122,8 @@ public class RelationalOperators {
 ```
 
 ### Equality operators
-
-1- == : equal to 
-2- != : not equal to 
+- == : equal to 
+- != : not equal to 
 
 ```
 public class Generalizations {
