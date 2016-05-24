@@ -24,11 +24,11 @@ Bunch of resources I use for projects and developing my skills
 
 ### Frameworks & Templates 
 
--[Bootstrap](http://getbootstrap.com) 
--[wow javascript](https://github.com/matthieua/WOW)
--[genesis wordrpess framework](https://github.com/matthieua/WOW) 
--[x-theme](https://github.com/matthieua/WOW) 
--[underscore wordpress starter template](https://github.com/matthieua/WOW) 
+- [Bootstrap](http://getbootstrap.com) 
+- [wow javascript](https://github.com/matthieua/WOW)
+- [genesis wordrpess framework](https://github.com/matthieua/WOW) 
+- [x-theme](https://github.com/matthieua/WOW) 
+- [underscore wordpress starter template](https://github.com/matthieua/WOW) 
 - [Normalize css](https://necolas.github.io/normalize.css)
 
  installation `npm install --save normalize.css`
