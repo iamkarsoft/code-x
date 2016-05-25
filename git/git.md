@@ -154,3 +154,21 @@ If you want to push your branch to the remote repository, you just use the follo
 $ git push origin branchname
 
 ```
+
+12 - correcting permission 
+
+Step 1: From your project repository, bring in the changes and test.
+
+```
+git fetch origin
+git checkout -b correct_permissions origin/correct_permissions
+git merge master
+```
+
+Step 2: Merge the changes and update on GitHub.
+
+```
+git checkout master
+git merge --no-ff correct_permissions
+git push origin master
+```
