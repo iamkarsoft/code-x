@@ -3,6 +3,18 @@ this is a repo for my journey through coding. Here; i document all the languages
 
 #### Content 
 
+- [cmd line ](cmd line/)
+- [genesis](genesis/)
+- [git ](git/)
+- [java ](java/)
+- [jekyll](jekyll/)
+- [js ](js/)
+- [ php track ](php-track/)
+- [wp](wp/)
+- [resources](resources.md)
+- [markdown](markdown.txt)
+
+
 ##### [PHP Track](php-track/)
 
 - Introduction to Html and Css
