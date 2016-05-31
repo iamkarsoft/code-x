@@ -314,6 +314,31 @@ function category_catalog_array($category, $limit = null, $offset = 0) {
 
 ```
 
+##### PDO Filters 
+
+- PDO::PARAM_STR for strings
+- PDO::PARAM_INT for integers 
+
+
+##### Fetching with PDO 
+
+- $result->fetchAll()
+- $result->fetch()
+- PDO::FETCH_ASSOC
+- PDO::FETCH_NUM
+
+
+##### Search form 
+
+- create a search form 
+- get user input and paginate
+- match search patterns
+-  use bind value for searching using user data 
+
+```
+$result->bindValue(1,'%'.$search.'%',PDO::PARAM_STR);
+
+```
 
 
 

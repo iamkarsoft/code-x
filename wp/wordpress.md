@@ -402,3 +402,13 @@ $wp_customize->get_control('blogdescription')->transport ='postMessage';
 }add_action('customize_register','koofi_theme_customizer');
 
 ```
+
+
+### Hack to make image responsive 
+
+```
+if(has_post_thumbnail()) {                    
+    $image_src = wp_get_attachment_image_src( get_post_thumbnail_id(),'full' );
+     echo '<img src="' . $image_src[0]  . '" width="100%"  />';
+} 
+```
