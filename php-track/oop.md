@@ -16,6 +16,13 @@ $recipe1= new Recipe();
 
 ```
 
+##### Functions
+
+- is_float()
+- is_int()
+- in_array() //checking inside an array  ` !in_array($measure, $this->measurements) `
+- empty()
+
 ##### Access modifiers
 
 allows to control access to classes 
@@ -164,3 +171,60 @@ echo $recipe1->displayRecipe();
 echo $recipe2->getTitle();
 
 ```
+
+###### Associative arrays 
+
+```
+public function addIngredient($item,$amou=null, $measure= null)
+{
+	$this->ingredients[]=array(
+		"item"=> $item,
+		"amount"=>$amount,
+		"measure"=>$measure;
+	)
+}
+
+```
+
+
+##### Static Methods 
+
+
+```
+class render
+
+{
+		public static function displayRecipe($recipe)
+
+		{
+
+		return $recipe->getTitle() ."by". $recipe->getSource();
+		}
+}
+
+
+
+echo Render::displayRecipe($recipe1);
+
+```
+
+
+##### Magic Methods 
+
+they are methods that are triggered 
+
+```
+
+//adding magic method __CONSTRUCT
+
+public function __construct($title==null){
+	$this->setTitle($title);
+
+}
+
+// converting object to string 
+
+public function __toString(){
+	
+	return $this ->getTitle();
+}
