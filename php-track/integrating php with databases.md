@@ -339,7 +339,13 @@ function category_catalog_array($category, $limit = null, $offset = 0) {
 $result->bindValue(1,'%'.$search.'%',PDO::PARAM_STR);
 
 ```
+##### Looping 
 
+```
+while ($row = $results->fetch(PDO::FETCH_ASSOC)) {
+    $item[$row["role"]][] = $row["fullname"];
+}
+```
 
 
 
