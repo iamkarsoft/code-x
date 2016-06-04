@@ -13,6 +13,7 @@ this is a repo for my journey through coding. Here; i document all the languages
 - [wp](wp/)
 - [resources](resources.md)
 - [markdown](markdown.txt)
+- [css](css/)
 
 
 ##### [PHP Track](php-track/)
