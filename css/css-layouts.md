@@ -67,7 +67,7 @@ footer{
 - absolute positioning
 
 
-they are neither affected or do not affect any element of the page
+they are neither affected or do not affect any element of the page. this positions relative to browser viewport if the parent doesn't have a relative positioning 
 
 ```
 li{
@@ -77,5 +77,36 @@ li{
 	right:10px;
 	bottom:30px;
 }
+```
+
+- relative  positioning
+
+allows to position relative to a parent 
+element 
+
+```
+.main-header{
+	position:relative;
+}
+``` 
+
+- fixed 
+
+allows to position relative to browser and stay fixed no matter the width of the browser 
+
+```
+li{
+	position:fixed;
+}
+
+```
+
+
+##### z-index 
+
+elements with higher z-index show on top with elements with a lower one.
+
+
+
 
 - 
