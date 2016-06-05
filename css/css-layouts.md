@@ -42,7 +42,40 @@ body{
 	.container{
 		width:100%;
 		max-width:1000px;
-		
+
 	}
 }
 ```
+
+##### Creating a sticky footer 
+
+```
+
+.wrapper {
+	min-height:calc(100vh - 89px); //viewport height
+}
+footer{
+	
+}
+
+```
+
+
+##### Positioning 
+
+
+- absolute positioning
+
+
+they are neither affected or do not affect any element of the page
+
+```
+li{
+	position:absolute
+	top:0;
+	left:0;
+	right:10px;
+	bottom:30px;
+}
+
+- 
