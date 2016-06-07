@@ -169,6 +169,14 @@ a[href$=".pdf"]{
 
 ```
 
+- (*) contains attribute selector 
+
+```
+a[href*="downloads"]{
+	text-decoration:none;
+}
+```
+
 ##### Element stats pseudo classes 
 
 ```
@@ -178,4 +186,157 @@ input:focus,textarea:focus{
 
 :disabled{
 	background:#ddd;
+}
+
+input[type="checkbox"]:checked+label{
+	
+	font-weight:bold;
+}
+```
+
+###### nth-of-type
+
+
+targets an element based on it's position inside a parent 
+
+- nth-child()
+
+```
+div:nth-child(4){
+	background:blue;
+}
+
+<!-- even goes from 2,4,6,8 -->
+div:nth-child(even){
+	background:blue;
+}
+
+<!-- odd goes from 1,3,5,7 -->
+div:nth-child(odd){
+	background:blue;
+}
+
+<!-- using expressions uses formul an+b or an ,n or -an+b;
+
+where a is cycle and b starting point -->
+div:nth-child(2n+3){
+	background:blue;
+}
+
+div:nth-child(-2n+3){
+	background:blue;
+}
+```
+
+- nth-of-type()
+
+```
+div:nth-of-type(4){
+	background:blue;
+}
+```
+
+
+- nth-of-type(even)
+
+```
+div:nth-of-type(even){
+	background:blue;
+}
+```
+
+
+- nth-last-of-type(even)
+
+selects from the bottom 
+
+
+```
+div:nth-last-of-type(3){
+	background:blue;
+}
+```
+
+##### Pseudo elements 
+
+- :first-line
+
+
+```
+.intro::first-line{
+	font-size:1.4em;
+}
+```
+
+- :first-letter
+
+
+```
+.intro::first-letter{
+	font-size:1.4em;
+}
+```
+
+- ::before 
+
+```
+.intro::before{
+content:url(../img/isc.png);
+	font-size:1.4em;
+}
+```
+
+
+- ::after 
+
+```
+.intro::after{
+content:"i know";
+	font-size:1.4em;
+}
+```
+
+- attr()
+
+```
+.intro::after{
+content:attr(title);
+	font-size:1.4em;
+}
+```
+
+##### negation pseudo class 
+
+selects everything that does not have the id of column a 
+
+```
+div:not(#col-a){
+	border-color:red;
+}
+
+input:not([type="submit"]){
+	box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+}
+```
+
+##### ::root and :target 
+
+
+- ::root 
+
+```
+:root{
+	background:#52bab3;
+}
+```
+
+- :target
+
+```
+:target{
+background:#384047;	
+}
+
+#col-c:target{
+background:#eff1f2;	
 }

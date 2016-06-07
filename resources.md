@@ -40,6 +40,6 @@ Bunch of resources I use for projects and developing my skills
 ###### Colors 
 
 
-- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 
+- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 384047 (dark grey) - eff1f2 (light grey)	
 
 
