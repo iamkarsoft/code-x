@@ -19,7 +19,8 @@ Bunch of resources I use for projects and developing my skills
 - [mail chimp]()
 - [custom post ui](https://wordpress.org/plugins/custom-post-type-ui/)
 - [jetpack](https://wordpress.org/plugins/jetpack/)
-- []
+- [show current template](#)
+- [backupwp]() for wordpress backup 
 
 
 ### Frameworks & Templates 
@@ -36,6 +37,9 @@ Bunch of resources I use for projects and developing my skills
  bower installation `bower install --save normalize-css`
 - [Animate css](https://daneden.github.io/animate.css/)
 
+###### Colors 
 
+
+- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 
 
 
