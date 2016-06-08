@@ -91,7 +91,9 @@ targets and styles immediate siblings element
 
  - (~) general sibling selector 
 
+
  targets every sibling element 
+
 
  ```
  h1 ~ label{
@@ -120,6 +122,7 @@ a[target="_blanck"]{
 
 - First and last child elements
 
+
 ```
 
 <!-- first child -->
@@ -145,6 +148,7 @@ span:only-child{
 li:empty{
 	background:#52bab3;
 }
+```
 
 ##### Substring matching attribute selectors 
 
@@ -200,6 +204,7 @@ input[type="checkbox"]:checked+label{
 targets an element based on it's position inside a parent 
 
 - nth-child()
+
 
 ```
 div:nth-child(4){
@@ -340,3 +345,4 @@ background:#384047;
 #col-c:target{
 background:#eff1f2;	
 }
+```
