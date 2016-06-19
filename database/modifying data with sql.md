@@ -45,3 +45,57 @@ update patrons set last_name="Anonymous", first_name="Anonymous" where email="jj
 `<column> like <pattern>` 
 
 
+### deleting  data 
+
+syntax 
+
+`delete from table;`
+
+
+```
+delete from patrons;
+```
+
+- deleting from rows 
+
+```
+delete from books where title like "Harry Potter";
+
+	//or
+
+delete from patrons where id=4; 
+
+```
+
+
+### Handling error when manipulating data
+
+removing autocommit  on running queries
+
+- transactions
+
+
+```
+Begin Transactions or Begin // removing autocommit
+
+
+Commit; // ending transactions
+```
+
+- Rolling back from transactions 
+
+undoing the querry runned 
+
+```
+Rollback;
+``` 
+
+### Object-Relational Mapping
+
+performs Crud operations with a language other than SQL.
+
+ Benefits
+ - handle transactions
+ - using singles under the hood 
+
+ 
