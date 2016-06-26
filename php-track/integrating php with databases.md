@@ -324,6 +324,8 @@ function category_catalog_array($category, $limit = null, $offset = 0) {
 
 - $result->fetchAll()
 - $result->fetch()
+- $result->fetchColumn()
+- $result->rowCount()
 - PDO::FETCH_ASSOC
 - PDO::FETCH_NUM
 
