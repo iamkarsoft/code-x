@@ -52,6 +52,33 @@ Bunch of resources I use for projects and developing my skills
 
 - [Animate css](https://daneden.github.io/animate.css/)
 
+
+###### Plugins 
+
+- [dragdis]()
+- [lastpass]()
+- [whatfont?]()
+
+###### [sublime packets]
+
+- sublime enhancement
+- sublime linter
+- git
+- terminal
+- color highlighter
+- csscomb 
+- simple ftp deploy
+- css color converter
+- alignment
+- markdown editing
+- trimmer
+- centurion theme
+- material
+- materialize
+- sublime text snippets
+- bootstrap 3
+
+
 ###### Colors 
 
 
