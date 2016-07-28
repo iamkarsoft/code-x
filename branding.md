@@ -63,4 +63,28 @@
 - directories 
 - blogs 
 
+### Emotion (imagery)
+
+- they provide context.
+
+### Solution - Added value
+
+- price
+- choice
+- trust 
+- association
+
+*Usp != added-value*
+
+
+## What to do
+
+- put down your thoughts
+- research, assess & compare
+- talk to an expert
+- plan for short & long term
+- execute
+- monitor
+- adapt & align to trends
+
 
