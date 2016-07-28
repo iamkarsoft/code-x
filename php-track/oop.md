@@ -1,5 +1,14 @@
 ### OOP
 
+#####Vocabulary of OOP
+What sometimes puts people off from working with objects is the tendency to use
+big words to refer to perfectly ordinary concepts. So to avoid deterring you, we’ll begin with a short vocabulary list:
+
+- class the recipe or blueprint for creating an object
+- object a thing instantiate the action of creating an object from a class
+- method a function that belongs to an object
+- property a variable that belongs to an object
+
 ###### Defining a class 
 
 ```
