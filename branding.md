@@ -50,6 +50,17 @@
 
 ### Association
 
-- 
+- participate in projects
+- comment on issues
+- assis in society (csr)
+- speak at events 
+- build a network
+
+### Accessibility (Online Presence)
+
+- social meia
+- website
+- directories 
+- blogs 
 
 
