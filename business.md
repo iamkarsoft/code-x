@@ -59,5 +59,13 @@ getting people to use the product, built your product around the user and based 
 
 
 
+=============================
+think about
 
+- ux / ui should be focus on your market
+- biodata safety/ how are you going to sercure
+- sms stuff = smssync.ushaidi
+- focus on  hostels first
+- traffic and content
+- build your own estate properties and listing
 
