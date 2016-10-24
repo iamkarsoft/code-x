@@ -28,6 +28,7 @@
 ##### Idea's are worth nothing until you implement them
 
 ##### the notion of failure
+
 ```
 fail fast
 fail cheap
