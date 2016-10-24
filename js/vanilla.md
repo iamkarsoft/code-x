@@ -24,7 +24,7 @@
    ```
 
  ### The Boolean Logic
- ```
+    ```
  > Greater Than
 >= Greater than or equal
 < less than
@@ -33,7 +33,7 @@
 != Not equal 
 === Equal value or type
 !== Not equal value
-```
+    ```
 
 ### Logic Operators & Conditionals
 
@@ -56,14 +56,15 @@ Else
  ### WHile loops in Js 
 
  - syntax
- ```
+    ```
  while(condition){
    code to run
 };
-```
+    ```
 
 - example of while loops
-```
+
+ ```
 // printing numbers from -10 to 19
 var counter = -10
 
@@ -100,20 +101,23 @@ var counter =5;
 		}
 		counter+=1;
 	}
-```
+ ```
 
 ### For loops
 
 - syntax
 
-```
+    ```
 for(init; condition; step){
   code to run
 
 }
-```
+    ```
+
 - Example 
-```
+
+
+    ```
 //printing all numbers between -10 and 19
 console.log("printing all numbers between -10 and 19");
 
@@ -148,11 +152,12 @@ for(i =5; i<=50; i++ ){
 		console.log(i);
 	}
 }
-```
+    ```
 
 ### Functions
 
  - syntax
+
  ```
  function doSomething(){
 console.log("hello world");
@@ -164,20 +169,22 @@ doSomething();
  ```
 
  - 2 types of functions
+ 
   -- Function Declarations
-   ```
+```
    function doSomething(){
 console.log("hello world");
 }
 ```
 
--- function expressions
 
-```
+    -- function expressions
+
+    ```
 var dosomething=function doSomething(){
 console.log("hello world");
 }
-```
+    ```
 
 - example
 ```
@@ -193,7 +200,8 @@ console.log(num * num);
 Console.log and Return are 2 different things. Console.log prints out the result of a function or a set of code which is only accessible in the javascript console, meanwhile Return actually returns the result of the code and is available in the program
 
  - Console.log
- ```
+ 
+```
  var first_name = prompt("what is your first name?");
 var last_name =prompt("what is your last name?");
 var age= prompt("How old are you?");
@@ -220,7 +228,8 @@ Ps:What you have to remember is that return only returns one result at a time, a
 
 ### Replacing String in Js
  - Using replace() to replace strings
- ```
+
+```
  function kebab(str){
 
 
@@ -245,6 +254,7 @@ Adding to array
 
 friends[3]="ramos";
 ```
+
 -- chaning a value in array
 
 ```
@@ -412,7 +422,9 @@ var person={
   city:"accra"
 }
 ```
+
 Example of creating an object and calling that object
+
 ```
 Creating the object dog
 
@@ -504,6 +516,7 @@ return x+y;
 //calling the method 
 person.total(person.math,person.english)
 ```
+
 ### DOM 
 Every website has a DOM, I refer to it as the structure. We can use javascript to do tons of things thanks to the DOM. We can manipulate tags and do various stuff with it
 
@@ -530,7 +543,8 @@ document.querySelector("h1 + p");
 - Manipulating style with javascript
 
 Using js to style a page
-	```	
+
+```	
 //we could add styles and remove styles existing in a stylesheet
 tag.classList.add("navbar");
 //removing style

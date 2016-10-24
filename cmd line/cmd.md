@@ -9,6 +9,8 @@ mkdir edibles
 ``` 
 touch hello.txt 
 ```
+
+
 ### Deleting a file in bash 
 
 ```
@@ -17,13 +19,15 @@ rm hello.txt
 
 
 ### Changing Directory
+
+
 ```
 cd drinks/
 
 //going backwards with .notation
 
 cd ../action
-```																																																																												
+```																																																			
 ### Copying
 - To copy a file into a directory
 

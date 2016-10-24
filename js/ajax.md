@@ -310,7 +310,7 @@ $("ajax").load('sidebar.html');
 
 	//callback function
 
-	$$.getJSON('url', function(response){
+	$.getJSON('url', function(response){
 
 		var statusHTML ="<ul class='bulleted'>"
 		//jquery for each 

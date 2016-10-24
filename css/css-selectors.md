@@ -69,7 +69,7 @@ this a concept to create classes that we will often use to style elements
 
  this style directly nested from the parent
 
- ```
+```
  form > a{
  font-size: .7em;
  }
@@ -80,7 +80,7 @@ this a concept to create classes that we will often use to style elements
 targets and styles immediate siblings element 
 
 
- ```
+```
 
  .btn + .btn {
 
