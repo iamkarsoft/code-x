@@ -15,7 +15,7 @@ this is the function you want the server to run
 
  - onreadystatechange event
 
- ```
+```
 xhr.onreadystatechange = function(){
 	//checking if server is done which readystate===4
 	if(xhr.readyState===4){
@@ -39,6 +39,7 @@ xhr.open('GET','sidebar.html');
 ```
 
 ### 4 sending the request
+
 ```
 //sending a request
 xhr.send();
@@ -94,12 +95,14 @@ Javascript object notation
 
 ```
 - typeof use to know the type of data 
+
 ```
 (typeof xhr.responseText);
 
 ```
 
 - JSON.Parse takes strings and turns it into object 
+
 
 ```
 var checkin= JSON.parse(xhr.responseText);
@@ -109,7 +112,7 @@ var checkin= JSON.parse(xhr.responseText);
 
  - html 
 
- ```
+```
  <!DOCTYPE html>
 <html>
 <head>
@@ -242,11 +245,11 @@ xhr.open("GET",'checkin.js');
  xhr.send();
 
  </script>
- ```
+```
 
  - checkin.json  for json data 
 
- ```
+```
  <script>
 [
 	{
@@ -272,7 +275,7 @@ xhr.open("GET",'checkin.js');
 
 
  </script>
- ```
+```
 
 
  ### Usin ajax and jquery
@@ -294,10 +297,10 @@ $("ajax").load('sidebar.html');
 
  the syntax
 
- ```
+```
  jquery.get(url,data,callback_function);
 
- ```
+```
 
  -- example 
 
@@ -366,7 +369,7 @@ $(document).ready(function(){
 
  - $.ajax() is the ultiame jquery ajax function 
 
- ```
+```
  $.ajax(url, settings);
 ```
 

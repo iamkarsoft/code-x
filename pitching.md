@@ -3,4 +3,4 @@
 pitching your idea in 2 mins
 
 - Talk about the problem you're trying to solve
-    + stats and exact figures of your target
+- stats and exact figures of your target
