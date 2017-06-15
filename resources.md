@@ -14,6 +14,8 @@ Bunch of resources I use for projects and developing my skills
 
 -  [Treehouse](https://www.teamtreehouse.com)
 
+-  [learn.co / Flatiron](https://www.learn.co)
+
 
 
 
@@ -53,11 +55,12 @@ Bunch of resources I use for projects and developing my skills
 - [Animate css](https://daneden.github.io/animate.css/)
 
 
-###### Plugins 
+###### Chrome Plugins 
 
 - [dragdis]()
 - [lastpass]()
 - [whatfont?]()
+- [tobby]
 
 ###### [sublime packets]
 
@@ -82,6 +85,6 @@ Bunch of resources I use for projects and developing my skills
 ###### Colors 
 
 
-- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 384047 (dark grey) - eff1f2 (light grey)	
+- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 384047 (dark grey) - eff1f2 (light grey)	- 
 
 

@@ -105,10 +105,11 @@ jQuery(document).ready(function($){
  <?php wp_nav_menu( array(
 	'theme_location'=>'Primary Menu', 'menu_id'=>'primary-menu', menu_class=> 'nav-menu'
  )) 
+ ```
 
  ### Wordpress theme support function 
 
- ```
+```
  function theme_support(){
 		add_theme_support('title-tag');
 		add_theme_support('automatic-feed-links');
@@ -142,9 +143,9 @@ function theme_widgets_init(){
 
 ```
 
-  ### wp excerpt 
+### wp excerpt 
 
- ```
+```
   function new_excerpt_length($length){
   return 60;
 }
@@ -229,13 +230,15 @@ Template Name: Left Sidebar
 */
 ```
 ### Wordpress navigation 
-
+```
 wp_nav_menu()
+```
 
 - Add theme support for menus in function.php
+
 ```
 add_theme_support('menus');
-``
+```
 
 - now calling the navigation in the location we want 
 
@@ -378,13 +381,11 @@ Parameter for setting and determine how message should be displayed
 - Post (updates live)
 
 
-```
+  ```
 $wp_customize -> add_setting( class, array(
-        'transport'-> 'Refresh'
-    
+        'transport'-> 'Refresh'    
 ))
-
-``` 
+  ```
 
 ### Customizer function 
 
