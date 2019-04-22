@@ -20,6 +20,9 @@ When it comes to constructive feedback, the tone and attitude you use to convey 
 
 
 1- Does the project meet the grading requirements? If not, what’s missing?
+
 2- What does the project do well?
+
 3- Where does the project need improvement?
+
 4- What are some resources you could share?

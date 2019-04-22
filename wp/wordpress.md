@@ -36,7 +36,7 @@ jQuery(document).ready(function($){
 })
 ```
 
-### TItle for page 
+### Title for page
 
 ```
 <?php wp_title(); ?>
@@ -44,7 +44,7 @@ jQuery(document).ready(function($){
 
 ### blog_info()
 
--Url 
+### Url 
 
 ```
 <? php blog_info('url'); ?>
@@ -79,6 +79,7 @@ jQuery(document).ready(function($){
 ``` 
 <?php the_content(); ?>
 ```
+
 ### adding header image to template
 
  ```

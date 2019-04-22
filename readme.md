@@ -28,6 +28,7 @@ this is a repo for my journey through coding. Here; i document all the languages
 - Building websites with php 
 - Flash messages using slim
 - PHP Testing
+    + [laravel](laravel/)
 - Console foundation
 - Git basics
 
