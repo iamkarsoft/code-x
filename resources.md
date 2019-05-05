@@ -53,6 +53,7 @@ Bunch of resources I use for projects and developing my skills
  bower installation `bower install --save normalize-css`
 
 - [Animate css](https://daneden.github.io/animate.css/)
+- [laravel]('https://laravel.com')
 
 
 ###### Chrome Plugins 
@@ -81,10 +82,6 @@ Bunch of resources I use for projects and developing my skills
 - sublime text snippets
 - bootstrap 3
 
-
-###### Colors 
-
-
-- 52bab3 (acqua green) - ff784f (orange) - 39add1 (light blue ) - 384047 (dark grey) - eff1f2 (light grey)	- 
+ 
 
 
